@@ -3,91 +3,130 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laboratório Web - João Duarte</title>
+    <title>Laboratório Web - Ana Sousa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
-            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
+
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px 15px;
             text-align: center;
         }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
         }
-        h2 {
-            color: #2c3e50;
+
+        header p {
+            margin-top: 5px;
+            font-size: 0.95em;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-        nav li {
-            margin-bottom: 10px;
-        }
+
         nav a {
-            color: #2980b9;
+            color: #00d4ff;
+            margin: 0 12px;
             text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        section {
+            padding: 30px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 15px auto;
+            max-width: 800px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #00d4ff;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 15px;
+            font-size: 0.85em;
+            color: #aaa;
+            background-color: rgba(0, 0, 0, 0.85);
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Como Criar um Website</h1>
-        <p>Autor: João Duarte | Laboratório de Sistemas Web</p>
+        <h1>Laboratório de Sistemas Web</h1>
+        <p>Por Rui Baptista</p>
     </header>
+
+    <nav>
+        <a href="#Introducao">Introdução</a>
+        <a href="#Estrutura">Estrutura</a>
+        <a href="#Codigo">Código</a>
+        <a href="#Publicacao">Publicação</a>
+        <a href="#Conclusao">Conclusão</a>
+    </nav>
+
     <main>
-        <section>
-            <h2>Conteúdo</h2>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">1. Início e Objetivo</a></li>
-                    <li><a href="#estrutura">2. Estrutura do Site</a></li>
-                    <li><a href="#codigo">3. Código HTML</a></li>
-                    <li><a href="#publicacao">4. Publicação com GitHub Pages</a></li>
-                </ul>
-            </nav>
+        <section id="Introducao">
+            <h2>Introdução</h2>
+            <p>Como criar um site simples em HTML e publicá-lo na web utilizando o GitHub Pages. O objetivo é aplicar os conhecimentos de HTML e CSS. Desafio: o meu Website online! </p>
         </section>
 
-        <section id="inicio">
-            <h2>1. Início e Objetivo</h2>
-            <p>O objetivo deste site é demonstrar como construir e publicar uma página simples na web utilizando HTML e GitHub Pages.</p>
+        <section id="Estrutura">
+            <h2>Estrutura</h2>
+            <p>O site é dividido em seções com navegação por âncoras. A imagem de fundo tem um visual tecnológico, e a estrutura é composta por HTML sem frameworks externos.</p>
         </section>
 
-        <section id="estrutura">
-            <h2>2. Estrutura do Site</h2>
-            <p>Um site básico é composto por arquivos HTML, CSS e, eventualmente, imagens ou JavaScript. Aqui usamos apenas HTML e CSS.</p>
+        <section id="Codigo">
+            <h2>Código</h2>
+            <p>Todo o código está em um único ficheiro HTML.</p>
         </section>
 
-        <section id="codigo">
-            <h2>3. Código HTML</h2>
-            <p>O código da página é estruturado com um cabeçalho, uma navegação simples com âncoras e conteúdo dividido em seções.</p>
+        <section id="Publicacao">
+            <h2>Publicação</h2>
+            <p>O site é publicado através do GitHub Pages.</p>
         </section>
 
-        <section id="publicacao">
-            <h2>4. Publicação com GitHub Pages</h2>
-            <p>Após criar o repositório no GitHub e fazer o upload do ficheiro <code>index.html</code>, ativamos o GitHub Pages nas configurações.</p>
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Este é o meu trabalho, usando HTML e CSS.</p>
         </section>
     </main>
+
     <footer>
-        <p>© 2025 João Duarte | Projeto Académico</p>
+        <p>© 28/04/2025 | Rui Baptista 1802895 | Laboratório de Sistemas e Serviços Web 2024 </p>
     </footer>
+
 </body>
 </html>
