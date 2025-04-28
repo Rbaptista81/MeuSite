@@ -1,115 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Como Fazer um Site</title>
+    <title>Laboratório Web - João Duarte</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #0073e6;
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
         main {
-            background-color: white;
             padding: 20px;
-            border-radius: 5px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
         }
         h2 {
-            color: #0073e6;
+            color: #2c3e50;
         }
-        ul {
-            margin-top: 10px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            color: #777;
-        }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Como Criar um Site</h1>
+        <h1>Como Criar um Website</h1>
+        <p>Autor: João Duarte | Laboratório de Sistemas Web</p>
     </header>
-
     <main>
         <section>
-            <h2>Passos Básicos para Criar um Site</h2>
-            <p>Clique em um dos itens abaixo para ver mais detalhes:</p>
-            <ul>
-                <li><a href="#planejamento"><strong>1. Planejamento:</strong></a> Defina o objetivo do site e o público-alvo.</li>
-                <li><a href="#plataforma"><strong>2. Escolha da Plataforma:</strong></a> HTML, WordPress, Wix, etc.</li>
-                <li><a href="#design"><strong>3. Design:</strong></a> Layout, cores, fontes e estrutura.</li>
-                <li><a href="#desenvolvimento"><strong>4. Desenvolvimento:</strong></a> HTML, CSS, JS.</li>
-                <li><a href="#publicacao"><strong>5. Publicação:</strong></a> Hospedagem e domínio.</li>
-                <li><a href="#manutencao"><strong>6. Manutenção:</strong></a> Atualizações e segurança.</li>
-            </ul>
+            <h2>Conteúdo</h2>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">1. Início e Objetivo</a></li>
+                    <li><a href="#estrutura">2. Estrutura do Site</a></li>
+                    <li><a href="#codigo">3. Código HTML</a></li>
+                    <li><a href="#publicacao">4. Publicação com GitHub Pages</a></li>
+                </ul>
+            </nav>
         </section>
 
-        <!-- Seções detalhadas com IDs para ancoragem -->
-        <section id="planejamento">
-            <h2>1. Planejamento</h2>
-            <p>Antes de criar um site, é essencial definir o objetivo, o público-alvo e o conteúdo que será publicado. Isso ajuda a orientar todo o projeto.</p>
+        <section id="inicio">
+            <h2>1. Início e Objetivo</h2>
+            <p>O objetivo deste site é demonstrar como construir e publicar uma página simples na web utilizando HTML e GitHub Pages.</p>
         </section>
 
-        <section id="plataforma">
-            <h2>2. Escolha da Plataforma</h2>
-            <p>Você pode construir seu site do zero com HTML/CSS ou usar plataformas como WordPress, Wix ou Squarespace para acelerar o processo.</p>
+        <section id="estrutura">
+            <h2>2. Estrutura do Site</h2>
+            <p>Um site básico é composto por arquivos HTML, CSS e, eventualmente, imagens ou JavaScript. Aqui usamos apenas HTML e CSS.</p>
         </section>
 
-        <section id="design">
-            <h2>3. Design</h2>
-            <p>O design envolve escolher uma paleta de cores, fontes, estrutura das páginas e a experiência do usuário (UX).</p>
-        </section>
-
-        <section id="desenvolvimento">
-            <h2>4. Desenvolvimento</h2>
-            <p>Esta fase inclui codificar o site com HTML para estrutura, CSS para estilo e JavaScript para funcionalidades interativas.</p>
+        <section id="codigo">
+            <h2>3. Código HTML</h2>
+            <p>O código da página é estruturado com um cabeçalho, uma navegação simples com âncoras e conteúdo dividido em seções.</p>
         </section>
 
         <section id="publicacao">
-            <h2>5. Publicação</h2>
-            <p>Registre um domínio e contrate um serviço de hospedagem para colocar seu site no ar. Pode usar GitHub Pages, Netlify, Hostinger, etc.</p>
-        </section>
-
-        <section id="manutencao">
-            <h2>6. Manutenção</h2>
-            <p>Atualize o conteúdo com frequência, corrija erros e mantenha o site seguro contra ameaças.</p>
-        </section>
-
-        <section>
-            <h2>Dicas Importantes</h2>
-            <ul>
-                <li>Use design responsivo para adaptar seu site a celulares e tablets.</li>
-                <li>Otimize imagens para carregamento mais rápido.</li>
-                <li>Utilize tags semânticas para melhorar o SEO.</li>
-                <li>Mantenha a navegação simples e intuitiva.</li>
-            </ul>
+            <h2>4. Publicação com GitHub Pages</h2>
+            <p>Após criar o repositório no GitHub e fazer o upload do ficheiro <code>index.html</code>, ativamos o GitHub Pages nas configurações.</p>
         </section>
     </main>
-
     <footer>
-        <p>© 2025 - Guia de Criação de Sites</p>
+        <p>© 2025 João Duarte | Projeto Académico</p>
     </footer>
 </body>
 </html>
-
-
